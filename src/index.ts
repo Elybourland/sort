@@ -1,8 +1,12 @@
-console.log('123');
-// tsc -w in cmd terminal to watch/compile code into index.js
+class Sorter {
+  constructor(public collection: number[]) {}
 
-const logSomething = () => {
-  console.log('something');
-};
+  sort(): void {
 
-logSomething();
+  }
+
+}
+
+const sorter = new Sorter([10, 3, -5, 0]);
+sorter.sort();
+console.log(sorter.collection);
